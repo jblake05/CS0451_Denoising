@@ -1,47 +1,23 @@
 # CS0451_Denoising
 
-DETECTING NOISE:
-
 https://github.com/microsoft/MS-SNSD
 
-
-Original Warmup Proposal:
-
-This project will address noise levels in audio recordings. Particularly, it will identify the presence of noise as a first step toward denoising audio signals.
-There is a noisy speech corpus called MS-SNDS (https://github.com/microsoft/MS-SNSD) that is perfect for this project. It provides human voices with different levels and types of noisiness, as well as the clean versions of these signals.
-This is a classification problem, as the machine would determine whether or not a voice signal is noisy. I think the next step (denoising these signals/outputting the clean signal version) would be outside the scope/timeframe of this class.
-I would judge this project to be successful if the model can accurately predict if a signal has noise inserted into the audio file. In particular, similar accuracy rates across the different noise sources the database provides would be ideal.
-I’m an electronic musician who often works in lofi production setups. These setups often end up creating a lot of artifacts due to a lack of audio treatment, background noise, etc. Identifying noise sources in audio is the first step to creating an algorithm that accurately denoises audio sources.
-
-
-________________________________________________________________________________________________
-
-
 ## Abstract - Jeff
-
-In 3-4 sentences, concisely describe:
 
 This project will create a model that can detect noise sources in audio. The model will be trained on voice samples combined with a variety of noise sources
 (air conditioner, vehicles, etc.) from Microsoft's Scalable Noisy Speech Dataset, and return whether or not the original source is noisy. The project will be
 deemed succesful if it is fairly accurate (significantly above the base rate of 50%). This project is a scaled down version of a full denoiser, and thus is 
 useful for the creation of clean audio that can be used in music or further analysis.
 
-<!-- What problem your project addresses.
-The overall approach you will use to solve the problem.
-How you propose to evaluate your success against your stated goals. -->
-
 ## Motivation and Question - Jeff
 
-Describe your motivation for your project idea. Some (shortened) examples of good types of motivations:
-We have a scientific data set for which predictive or exploratory models would help us generate hypotheses.
-We have user information for which predictive models would help us give users better experiences.
-We have performance data (e.g. from sports teams) for which predictive models could help us make better decisions.
-Algorithmic bias is an increasingly urgent challenge as machine learning products proliferate, and we want to explore it more deeply.
-You should be more specific than these: describe your specific data set (if applicable); your scientific questions; the type of decisions your model could inform; etc.
+Our motivation behind this project comes from our access to the MS-SNSD (speech dataset, mentioned above) which could help in the algorithmic denoising of audio sources.
+As electronic musicians, achieving a noise-free or noise-reduced audio sample is difficult to achieve on a low budget -- acoustic treatment and a studio environment is typically
+needed for a more professional sound. Cleaner audio is also helpful for different audio analysis tasks, such as models that automate subtitles or translation. Thus, this project
+will create a model that can be useful for musicians and further audio programming work. One question going into this project involves exploring how vectorization of audio files
+could work in a way that is efficient and scalable across a large dataset.
 
-- clean audio is GOOD
-
-## Planned Deliverables
+## Planned Deliverables - Charlie
 
 We have two planned deliverables:
 1) A python package that effectively classifies an audio file as either clean or noisy. This package will contain our full documented machine learning pipeline.
@@ -52,12 +28,7 @@ We have two planned deliverables:
 
 ## Resources Required - Jeff
 
-What resources do you need in order to complete your project? Data? Computing power? An account with a specific service?
-Please pay special attention to the question of data. If your project idea involves data, include at least one link to a data set you can use. If you can’t find data for your original idea, that’s ok! Think of something related to your group’s interests for which you can find data.
-Most projects should involve data in some way, but certain projects may not require data. Ask me if you’re not sure.
-
-- access to ada for parsing through thousands of .wav files
-- scikit audiolab for dealing with audio files
+We'll likely need access to ada to complete this project, both for its storage space and its computational power (since we'll be parsing through thousands of wave files). We also need access to a dataset of voice and noise sources, but this is provided in https://github.com/microsoft/MS-SNSD. This dataset has thousands of clean voice sources alongside around one hundred different noise sources, so we'll use it to generate the training and testing data through combination.
 
 ## What You Will Learn - Both
 
