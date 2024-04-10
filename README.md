@@ -20,9 +20,15 @@ ________________________________________________________________________________
 ## Abstract - Jeff
 
 In 3-4 sentences, concisely describe:
-What problem your project addresses.
+
+This project will create a model that can detect noise sources in audio. The model will be trained on voice samples combined with a variety of noise sources
+(air conditioner, vehicles, etc.) from Microsoft's Scalable Noisy Speech Dataset, and return whether or not the original source is noisy. The project will be
+deemed succesful if it is fairly accurate (significantly above the base rate of 50%). This project is a scaled down version of a full denoiser, and thus is 
+useful for the creation of clean audio that can be used in music or further analysis.
+
+<!-- What problem your project addresses.
 The overall approach you will use to solve the problem.
-How you propose to evaluate your success against your stated goals.
+How you propose to evaluate your success against your stated goals. -->
 
 ## Motivation and Question - Jeff
 
