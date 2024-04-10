@@ -1,7 +1,5 @@
 # CS0451_Denoising
 
-https://github.com/microsoft/MS-SNSD
-
 ## Abstract - Jeff
 
 This project will create a model that can detect noise sources in audio. The model will be trained on voice samples combined with a variety of noise sources
@@ -38,11 +36,20 @@ Charlie:
 I am very excited to begin working with audio files. My goals were mainly around contributing equally to all areas of the project, from proposal to creation to presentation, and I plan on doing so to learn as much as I can about how the complete machine learning pipeline works with respect to audio. Specifically, I am excited about learning how audio files are encoded and the process of vectorizing them for our model. Also, I want to learn how to publish an open-source python package so that our project can be used by others in the future.
 Lastly, I also had a goal to communicate well with my group, and I want to use it as an opportunity to solidify my git workflow with respect to working in feature branches and creating pull requests for Jeff to review.
 
+Jeff:
+I hope to learn specific audio manipulation techniques. Specifically, I would love to get into fourier transforms, as I haven't had the chance to operate on audio from the frequency domain
+directly. Further, I would love to use packages that exist in Python that help with audio work, such as scikit's audiolab. Working with audio in ways that machines can easily parse (as 
+opposed to more creative uses like plugin design) will be fun! Like Charlie, I'd also like to solidify my work on git. I feel fairly confident working with it on my own, but can run into
+trouble at times working with others with respect to merge conflicts. In that same vein, I'd love to practice pair programming and more directly collaborative workflows.
+
 ## Risk Statement - Jeff
 
-What are two things that could potentially stop you from achieving the full deliverable above? Maybe it turns out that the pattern you thought would be present in the data just doesn’t exist? Or maybe your idea requires more computational power than is available to you? What particular risks might be applicable for your project?
+What are two things that could potentially stop you from achieving the full deliverable above? 
 
-- computational power
+One risk we could see is that of computational power. I would be worried about the amount of time it would take to train the model on large amounts of wav files (which are often hundreds of
+KBs large). We could alleviate this by using fewer audio samples (which would likely create a less accurate model) or find a different way of featuring the audio (for instance, finding a
+method similar to max pooling for images). Another possible risk could be the model not being able to easily identify noise sources within an already busy vocal source. We could, again, try
+to fix this by changing the domain (e.g. from time to frequency) and testing if the resulting model is more accurate.
 
 ## Ethics Statement
 
