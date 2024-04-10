@@ -27,7 +27,7 @@ How you propose to evaluate your success against your stated goals.
 ## Motivation and Question - Jeff
 
 Describe your motivation for your project idea. Some (shortened) examples of good types of motivations:
-We have a scientific data set for which predictive or expoloratory models would help us generate hypotheses.
+We have a scientific data set for which predictive or exploratory models would help us generate hypotheses.
 We have user information for which predictive models would help us give users better experiences.
 We have performance data (e.g. from sports teams) for which predictive models could help us make better decisions.
 Algorithmic bias is an increasingly urgent challenge as machine learning products proliferate, and we want to explore it more deeply.
@@ -35,23 +35,14 @@ You should be more specific than these: describe your specific data set (if appl
 
 - clean audio is GOOD
 
-## Planned Deliverables - Charlie
+## Planned Deliverables
 
-Concisely state what you are aiming to create and what capabilities it will have. For most projects, I would expect the deliverable to include:
-A Python package containing all code used for algorithms and analysis, including documentation.
-At least one Jupyter notebook illustrating the use of the package to analyze data.
-However, your specific idea might imply different deliverables (e.g. an essay). Consult with me if you’re not sure.
-You should describe what your deliverable will be able to do and how you will evaluate its effectiveness. Please consider two scenarios:
-“Full success.” What will your deliverable be if everything works out for you exactly as you plan?
-“Partial success.” What useful deliverable will you be able to offer even if things don’t 100% work out? For example, maybe you aren’t able to get that webapp together, but you can still create a code repository that showcases the machine learning pipeline needed to use to support the app. Have a contingency plan!
-Written Deliverables
-You’ll also write a blog post on your project; you don’t have to discuss this post in your proposal though.
+We have two planned deliverables:
+1) A python package that effectively classifies an audio file as either clean or noisy. This package will contain our full documented machine learning pipeline.
+2) A Jupyter notebook that demonstrates the use of our package to classify audio files as clean or noisy.
 
-- python package that detects noise
-- notebook demonstration
-- FULL SUCCESS - accurate between clean files and those same files + noise
-- PARTIAL SUCCESS - accurate between clean files and only noise files
-
+"Full success" for us is detecting the presence of noise in audio files with high accuracy. 
+"Partial success" would be only detecting the difference between a clean audio file and a file that is only noise. Since our data consists of A) clean audio files and B) types of background noise, we will have the pure noise files to compare against the clean ones. This would indicate that we have made progress and are well on our way, but weren't able to make our final model accurate enough.
 
 ## Resources Required - Jeff
 
@@ -89,8 +80,7 @@ A sentiment analyzer must be trained on specific languages. What languages will 
 
 - we think it will help the world become a better place! Especially where clearing up audio is concerned, we think it'll at least contribute to more explicit audio translation, which will help the world come together :) <3 
 
-## Tentative Timeline - Charlie
+## Tentative Timeline
 
-We will have a checkpoint for the project in Week 9 or 10, and then final presentations in Week 12. With this in mind, please describe what you expect to achieve after three and six. Your goal by the three-week check-in should be to have “something that works.” For example, maybe in three weeks you’ll ready to demonstrate the data acquisition pipeline and show some exploratory analysis, and in the last couple weeks you’ll actually implement your machine learning models.
-
-- this timeline looks good!
+After week three, we plan to have designed and completed our data collection. We also plan to have vectorized our data and begun the modeling process, showing some exploratory analysis.
+By week six, we plan to have engineered our features and designed our model, and completed a full assessment of our model. And hopefully it works! :)
