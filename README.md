@@ -57,28 +57,26 @@ Most projects should involve data in some way, but certain projects may not requ
 
 Each group member should return to their stated goals from the reflective goal-setting assignment at the beginning of the course. Then, in this section, please state what each group member intends to learn through working on the project, relating your intentions to your stated goals. You might be thinking of certain algorithms, software packages, version control, project management, effective teamwork, etc.
 
+Charlie:
+I am very excited to begin working with audio files. My goals were mainly around contributing equally to all areas of the project, from proposal to creation to presentation, and I plan on doing so to learn as much as I can about how the complete machine learning pipeline works with respect to audio. Specifically, I am excited about learning how audio files are encoded and the process of vectorizing them for our model. Also, I want to learn how to publish an open-source python package so that our project can be used by others in the future.
+Lastly, I also had a goal to communicate well with my group, and I want to use it as an opportunity to solidify my git workflow with respect to working in feature branches and creating pull requests for Jeff to review.
+
 ## Risk Statement - Jeff
 
 What are two things that could potentially stop you from achieving the full deliverable above? Maybe it turns out that the pattern you thought would be present in the data just doesn’t exist? Or maybe your idea requires more computational power than is available to you? What particular risks might be applicable for your project?
 
 - computational power
 
-## Ethics Statement - Charlie
+## Ethics Statement
 
-All projects we undertake involve decisions about whose interests matter; which problems are important; and which tradeoffs are considered acceptable. Take some time to reflect on the potential impacts of your project on its prospective users and the broader world. Address the following questions:
-What groups of people have the potential to benefit from our project?
-What groups of people have the potential to be excluded from benefit or even harmed from our project?
-Will the world become an overall better place because we made our project? Describe at least 2 assumptions behind your answer. For example, if your project aims to make it easier to predict crime, your assumptions might include:
-Criminal activity is predictable based on other features of a person or location.
-The world is a better place when police are able to perform their roles more efficiently.
-If your project involves making decisions or recommendations, then you will also need to consider possible forms of algorithmic bias in your work. Here are some relevant examples:
-A recipe recommendation app can privilege the cuisines of some locales over others. Will your user search recipes by ingredients? Peanut butter and tomato might seem an odd combination in the context of European cuisine, but is common in many traditional dishes of the African diaspora. A similar set of questions applies to recommendation systems related to style or beauty.
-A sentiment analyzer must be trained on specific languages. What languages will be included? Will diverse dialects be included, or only the “standard” version of the target language? Who would be excluded by such a choice, and how will you communicate about your limitations?
+Who benefits from this project?
+This project will benefit the audio community. The ability to identify noise in audio files will allow us to then clean them up and remove the excess noise. This could be useful for anyone from musicians to podcasters to filmmakers - people who need to record audio and want to make sure it's as clean as possible so that the audience can hear it clearly and have a better listening experience.
 
-- benefits audio community. anyone recording
-- probably won't harm anyone, but none English speakers would be at a disadvantage since it is trained on English words. (excluded from benefit)
+Who has the potential to be excluded from benefit or even harmed from this project?
+Our data includes spoken audio by male and female speakers. However, English is the only language used in the dataset, meaning our model will only be trained in English. This will exclude non-English speakers from potential benefits of the project, which is around 80% of the world's population.
 
-- we think it will help the world become a better place! Especially where clearing up audio is concerned, we think it'll at least contribute to more explicit audio translation, which will help the world come together :) <3 
+Will the world become an overall better place because of this project? 
+We think this project will help the world become a better place. Since denoising audio is the ultimately goal where this project will have the most impact, it will allow for clearer audio in the future - this will benefit everyone, especially those hard of hearing or people trying to translate a foreign language. The assumptions here are that this will help people communicate more effectively, and that training the model in English will still contribute to some level of increasing translation accuracy from audio.
 
 ## Tentative Timeline
 
