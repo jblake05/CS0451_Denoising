@@ -1,0 +1,3 @@
+[submodule "MS-SNSD"]
+	path = MS-SNSD
+	url = https://github.com/microsoft/MS-SNSD.git
