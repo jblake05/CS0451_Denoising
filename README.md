@@ -4,6 +4,7 @@
 to install the SN-SNSD dataset with the repository, run the following commands in the terminal:
 
 ``$ git submodule init``
+
 ``$ git submodule update``
 
 
