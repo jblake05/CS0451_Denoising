@@ -1,13 +1,23 @@
 # CS0451_Denoising
 
-## Abstract - Jeff
+
+to install the SN-SNSD dataset with the repository, run the following commands in the terminal:
+
+``$ git submodule init``
+
+``$ git submodule update``
+
+
+## Project Proposal:
+
+## Abstract
 
 This project will create a model that can detect noise sources in audio. The model will be trained on voice samples combined with a variety of noise sources
 (air conditioner, vehicles, etc.) from Microsoft's Scalable Noisy Speech Dataset, and return whether or not the original source is noisy. The project will be
 deemed succesful if it is fairly accurate (significantly above the base rate of 50%). This project is a scaled down version of a full denoiser, and thus is 
 useful for the creation of clean audio that can be used in music or further analysis.
 
-## Motivation and Question - Jeff
+## Motivation and Question
 
 Our motivation behind this project comes from our access to the MS-SNSD (speech dataset, mentioned above) which could help in the algorithmic denoising of audio sources.
 As electronic musicians, achieving a noise-free or noise-reduced audio sample is difficult to achieve on a low budget -- acoustic treatment and a studio environment is typically
@@ -15,7 +25,7 @@ needed for a more professional sound. Cleaner audio is also helpful for differen
 will create a model that can be useful for musicians and further audio programming work. One question going into this project involves exploring how vectorization of audio files
 could work in a way that is efficient and scalable across a large dataset.
 
-## Planned Deliverables - Charlie
+## Planned Deliverables
 
 We have two planned deliverables:
 1) A python package that effectively classifies an audio file as either clean or noisy. This package will contain our full documented machine learning pipeline.
@@ -24,13 +34,11 @@ We have two planned deliverables:
 "Full success" for us is detecting the presence of noise in audio files with high accuracy. 
 "Partial success" would be only detecting the difference between a clean audio file and a file that is only noise. Since our data consists of A) clean audio files and B) types of background noise, we will have the pure noise files to compare against the clean ones. This would indicate that we have made progress and are well on our way, but weren't able to make our final model accurate enough.
 
-## Resources Required - Jeff
+## Resources Required
 
 We'll likely need access to ada to complete this project, both for its storage space and its computational power (since we'll be parsing through thousands of wave files). We also need access to a dataset of voice and noise sources, but this is provided in https://github.com/microsoft/MS-SNSD. This dataset has thousands of clean voice sources alongside around one hundred different noise sources, so we'll use it to generate the training and testing data through combination.
 
-## What You Will Learn - Both
-
-Each group member should return to their stated goals from the reflective goal-setting assignment at the beginning of the course. Then, in this section, please state what each group member intends to learn through working on the project, relating your intentions to your stated goals. You might be thinking of certain algorithms, software packages, version control, project management, effective teamwork, etc.
+## What You Will Learn
 
 Charlie:
 I am very excited to begin working with audio files. My goals were mainly around contributing equally to all areas of the project, from proposal to creation to presentation, and I plan on doing so to learn as much as I can about how the complete machine learning pipeline works with respect to audio. Specifically, I am excited about learning how audio files are encoded and the process of vectorizing them for our model. Also, I want to learn how to publish an open-source python package so that our project can be used by others in the future.
